@@ -13,7 +13,7 @@ async function getData() {
 	document.getElementById("input").value=""
 
 
-	const API = process.env.API;
+	const API = process.env.IP_KEY;
  try {
 	const response = await fetch('https://api.openai.com/v1/chat/completions', {
 		method: 'POST',
