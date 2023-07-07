@@ -6,4 +6,4 @@
   to = "/js/index.js"
   status = 200
 [build.environment]
-API_KEY = "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"
+IP_KEY = "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"
