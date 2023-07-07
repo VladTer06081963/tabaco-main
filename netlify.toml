@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
-  functions = "netlify-functions" [[redirects]]
+  functions = "netlify-functions"
+[[redirects]]
   from = "/*"
   to = "/js/index.js"
   status = 200
