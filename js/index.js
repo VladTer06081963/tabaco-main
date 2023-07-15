@@ -13,12 +13,12 @@ async function getData() {
 	document.getElementById("input").value=""
 
 
-	const API = process.env.IP_KEY;
+	// const API = process.env.IP_KEY;
  try {
 	const response = await fetch('https://api.openai.com/v1/chat/completions', {
 		method: 'POST',
 		headers: {
-			'Authorization': `Bearer ${API}`,
+			'Authorization': `Bearer ${process.env.API_KEY}`,
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({
